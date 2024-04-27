@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>/* Reset default browser styles */
+            @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Body styles */
+        body {
+            font-family: Oxanium, sans-serif;
+            background-image:url(./assets/images/background.gif);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        /* Form container styles */
+        form {
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: block;
+            background: #fff;
+            width: 410px;
+            padding: 30px;
+            box-shadow:  rgba(151, 250, 242, 0.822) 0px 0px 10px 5px;
+            }
+        
+        /* Heading styles */
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+       
+        
+        /* Input styles */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #007bff;
+        }
+        
+        /* Submit button styles */
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #050f27;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Link styles */
+        a {
+            display: block;
+            text-align: center;
+            color: #050f27;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        </style>
+</head>
+<body>
+    
+    <form action="register.php" method="post">
+        <h2>Registration</h2>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <label for="repeatPassword">Repeat Password:</label><br>
+        <input type="password" id="repeatPassword" name="repeatPassword" required><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
